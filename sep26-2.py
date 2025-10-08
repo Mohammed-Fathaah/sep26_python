@@ -26,7 +26,7 @@ print('-'*50)
 for i in data:
     print('{:<10}{:<10}{:<20}{:<10}'.format(i[0],i[1],i[2],i[3]))
 
-cur.execute('select name,age from user')
+cur.execute('select name,age from user where age>=200')
 data1=cur.fetchall()
 for i in data1:
     print(i)
