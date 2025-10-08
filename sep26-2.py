@@ -25,3 +25,8 @@ print('{:<10}{:<10}{:<20}{:<10}'.format('UserId','Name','Email','Age'))
 print('-'*50)
 for i in data:
     print('{:<10}{:<10}{:<20}{:<10}'.format(i[0],i[1],i[2],i[3]))
+
+cur.execute('select name,age from user')
+data1=cur.fetchall()
+for i in data1:
+    print(i)
